@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brickin Pictures - Home</title>
+    <link rel="icon" href="./Pict/Logo/appareil-photo-reflex-numerique.png" type="image/png">
+    <link rel="stylesheet" href="style-home.css">
+    <link rel="alternate" hreflang="en" href="https://brickin-pictures-doqynepwnpcywlgl.builder-preview.com/en">
+    <link rel="alternate" hreflang="x-default" href="https://brickin-pictures-doqynepwnpcywlgl.builder-preview.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barriecito&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barriecito&family=Oi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="./Pict/Logo/NewPdP-2024.webp" target="_blank">
+                    <img src="./Pict/Logo/NewPdP-2024.webp" alt="Logo de Brickin Pictures">
+                </a>
+                <a class="name-logo" href="#">Brickin Pictures</a>
+            </div>
+            <!-- Menu Hamburger -->
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <!-- Navigation Menu -->
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="h-nav-home" data-icon-class="fa-solid fa-house"><i class="fa-solid fa-house" style="color: #74C0FC;" aria-hidden="true"></i> Accueil</a>
+                <a href="photos.html" data-i18n="h-nav-photo" data-icon-class="fa fa-camera"><i class="fa fa-camera" aria-hidden="true" style="color: #74C0FC;"></i> Photos</a>
+                <a href="contact.html" data-i18n="h-nav-contact" data-icon-class="fa fa-envelope"><i class="fa fa-envelope" aria-hidden="true" style="color: #74C0FC;"></i> Contact</a>
+                <a href="apropos.html" data-i18n="h-nav-apropos" data-icon-class="fa fa-circle-info"><i class="fa fa-circle-info" aria-hidden="true" style="color: #74C0FC;"></i> À propos</a>
+                <div class="language-selector">
+                    <label for="language" data-i18n="h-language">🌐 Langue :</label>
+                    <select id="language" class="select-with-flag">
+                        <option value="en" data-image="https://flagcdn.com/w320/gb.png" data-flag="gb">English</option>
+                        <option value="fr" data-image="https://flagcdn.com/w320/fr.png" selected>Français</option>
+                        <option value="es" data-image="https://flagcdn.com/w320/es.png">Español</option>
+                    </select>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Contenu principal -->
+    <div class="header">
+        <div class="container animate-on-scroll">
+            <div class="box">
+                <h2 data-i18n="h-title">Bienvenue sur mon site de photos</h2>
+                <h1 data-i18n="h-subtitle">Je m'appelle Martin Ligny</h1>
+                <p data-i18n="h-description">Je suis un photographe situé à Amiens et Montdidier. Je suis un photographe
+                    multi-tâches.</p>
+                <div class="btns">
+                    <a href="./photos.html" class="btn" data-i18n="h-btn-monjob">Mon travail</a>
+                    <a href="./contact.html" class="btn" data-i18n="h-btn-contact">Contactez-moi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about animate-on-scroll-W">
+        <div class="container">
+            <div class="box">
+                <h1 class="title" data-i18n="h-about-title">
+                    Martin Ligny, un photographe situé à Amiens et Montdidier.
+                </h1>
+                <p data-i18n="h-about-p">
+                    J'aime beaucoup prendre une pause en allant faire des photos dans la nature ou pour des événements
+                    en particulier. La photographie est une passion pour moi !
+                </p>
+                <ul>
+                    <li>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <span data-i18n="h-about-since">Depuis le 11 Août 2023</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-check"></i>
+                        <span data-i18n="h-about-hobby">Passionné par la photographie</span>
+                    </li>
+                </ul>
+                <div class="signature">
+                    <img src="./Pict/Sign.png" alt="">
+                    <div class="txt">
+                        <div class="name" data-i18n="h-about-name">Martin Ligny</div>
+                        <div class="job" data-i18n="h-about-job">Étudiant en Cybersécurité, Informatique et réseaux, et
+                            ÉLectronique</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image">
+                    <img src="./Pict/Me.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services bg-dark animate-on-scroll" id="services">
+        <div class="heading ">
+            <h1 data-i18n="h-myserv-title">Mes Services :</h1>
+            <p data-i18n="h-myserv-p1">En tant que photographe passionné, je mets mon expérience et mon sens artistique
+                à votre service pour
+                vous offrir une gamme de prestations sur mesure.</p>
+            <p data-i18n="h-myserv-p2">Que vous souhaitiez immortaliser un événement, réaliser une séance photo unique,
+                ou sublimer vos images
+                avec des retouches soignées, chaque projet est pensé pour refléter votre personnalité et vos moments
+                précieux.</p>
+
+        </div>
+        <div class="container">
+            <div class="box border-1">
+                <div class="item">
+                    <img src="./Pict/camera.png" alt="Camera">
+                    <a href="">
+                        <h6 data-i18n="h-mydo-SpM">Séance photo sur Mesure</h6>
+                        <p data-i18n="h-mydo-SpM-p1">Envie de photos uniques, que ce soit en solo, en couple, en
+                            famille, ou entre amis ?</p>
+                        <p data-i18n="h-mydo-SpM-p2">La séance photo sur mesure s’adapte à vous ! </p>
+                        <p data-i18n="h-mydo-SpM-p3">Ensemble, créons des images authentiques et pleines de vie qui
+                            racontent votre histoire.</p>
+                        <p data-i18n="h-mydo-SpM-p4">Prêt(e) à immortaliser ces instants avec style ?</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box border-2">
+                <div class="item">
+                    <img src="./Pict/party.png" alt="Party">
+                    <a href="">
+                        <h6 data-i18n="h-mydo-Ce">Couverture d'événements</h6>
+                        <p data-i18n="h-mydo-Ce-p1">Anniversaires, petites cérémonies, soirées privées…</p>
+                        <p data-i18n="h-mydo-Ce-p2">Pour chaque événement important, nos couvertures d’événements
+                            saisissent vos moments clés
+                            avec créativité et authenticité.</p>
+                        <p data-i18n="h-mydo-Ce-p3">Revivez chaque instant grâce à des photos vibrantes et uniques,
+                            conçues pour immortaliser vos
+                            plus beaux souvenirs !</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box border-3">
+                <div class="item">
+                    <img src="./Pict/magic-wand.png" alt="Montage">
+                    <a href="">
+                        <h6 data-i18n="h-mydo-Mp">Montage photo</h6>
+                        <p data-i18n="h-mydo-Mp-p1">Donnez à vos photos un style unique et une qualité optimale !</p>
+                        <p data-i18n="h-mydo-Mp-p2">Grâce à des retouches personnalisées, nous améliorons chaque détail
+                            pour un rendu impeccable.</p>
+                        <p data-i18n="h-mydo-Mp-p3">Offrez-vous des images revisitées avec soin et créativité, qui
+                            reflètent toute la beauté de vos souvenirs.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p data-i18n="h-foot-copyright">&copy; 2024 by brickinclackman. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <p data-i18n="h-foot-contact">Contact: </p>
+                <p><a href="mailto:brickinpictures@gmail.com">brickinpictures@gmail.com</a></p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/profile.php?id=61550329854190" target="_blank" class="footer-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/brickinclackmanpictures/" target="_blank" class="footer-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#top" class="footer-icon">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            // Initialiser Select2 pour le menu déroulant
+            $('#language').select2({
+                templateResult: formatFlag, // Utilise la fonction pour afficher les options
+                templateSelection: formatFlag, // Utilise la fonction pour la sélection
+                minimumResultsForSearch: -1, // Désactive la barre de recherche
+                width: 'resolve', // Ajuste la largeur automatiquement
+            });
+
+            // Format d'affichage des options avec les drapeaux
+            function formatFlag(option) {
+                // Si l'option n'a pas d'ID, retourner simplement le texte
+                if (!option.id) {
+                    return option.text;
+                }
+
+                // Récupérer l'URL de l'image depuis l'attribut `data-image`
+                const flag = $(option.element).data('image');
+                const isGB = $(option.element).data('flag') === 'gb'; // Vérifie si c'est le drapeau GB
+
+                // Générer le HTML avec le drapeau et le texte
+                return $(
+                    `<span>
+                        <img src="${flag}" style="width: ${isGB ? '24px' : '20px'}; height: auto; margin-right: 10px;" alt="flag" />
+                        ${option.text}
+                    </span>`
+                );
+            }
+
+            // Charger les traductions depuis lang.json
+            let translations = {};
+            fetch('lang.json')  // Assurez-vous que le chemin du fichier JSON est correct
+            .then(response => response.json())
+            .then(data => {
+                translations = data;
+                // Appliquer la langue par défaut après le chargement du fichier JSON
+                const defaultLang = 'fr'; // Langue par défaut : français
+                document.getElementById('language').value = defaultLang;
+                changeLanguage(document.getElementById('language')); // Appliquer les traductions initiales
+            });
+
+            // Fonction pour changer la langue
+            /*4function changeLanguage(select) {
+                const selectedLang = select.value;
+
+                // Mettre à jour le contenu du texte pour chaque élément avec l'attribut data-i18n
+                document.querySelectorAll('[data-i18n]').forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    if (translations[selectedLang] && translations[selectedLang][key]) {
+                        element.textContent = translations[selectedLang][key];
+                    }
+                });
+
+                // Mettre à jour l'attribut de langue de la page (facultatif)
+                document.documentElement.lang = selectedLang;
+            }*/
+
+            function changeLanguage(select) {
+                const selectedLang = select.value;
+
+                document.querySelectorAll('[data-i18n]').forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    if (translations[selectedLang] && translations[selectedLang][key]) {
+                        // Chercher les noeuds texte uniquement
+                        element.childNodes.forEach(node => {
+                            if (node.nodeType === Node.TEXT_NODE) {
+                                node.textContent = translations[selectedLang][key];
+                            }
+                        });
+                    }
+                });
+
+                document.documentElement.lang = selectedLang;
+            }
+
+            // Appliquer l'événement change à votre sélecteur de langue
+            $('#language').on('change', function () {
+                changeLanguage(this);
+            });
+        });
+
+        document.querySelectorAll('i').forEach((icon, index) => {
+            console.log(`Icon ${index}:`, icon.className);
+        });
+
+        console.log(document.querySelectorAll('i'));
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            const elementsWhite = document.querySelectorAll('.animate-on-scroll-W');
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            // Menu déroulant
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("open"); // Gérer l'animation
+            });
+
+            function onScroll() {
+                elements.forEach((element) => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    }
+                });
+                elementsWhite.forEach((element) => {
+                    const rect = element.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            // Détecter le scroll et au chargement initial
+            window.addEventListener('scroll', onScroll);
+            onScroll(); // Pour s'assurer que les éléments déjà visibles sont affichés
+
+            // Fonction qui vérifie la taille de l'écran et modifie le texte de l'élément
+            function updateLinkText() {
+                const menuLink = document.querySelector('.name-logo');
+                
+                if (window.matchMedia("(max-width: 1550px)").matches) {
+                    // Si la condition est respectée (écran < 655px), on remplace le texte
+                    menuLink.textContent = "BCP";
+                } else {
+                    // Sinon, on remet le texte d'origine
+                    menuLink.textContent = "Brickin Pictures";
+                }
+            }
+
+            // Appel de la fonction lors du chargement initial de la page
+            updateLinkText();
+
+            // Appel de la fonction lors du redimensionnement de la fenêtre
+            window.addEventListener('resize', updateLinkText);
+        });
+    </script>
+</body>
+
+</html>

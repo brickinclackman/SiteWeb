@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brickin Pictures - Contact</title>
+    <link rel="icon" href="./Pict/Logo/appareil-photo-reflex-numerique.png" type="image/png">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barriecito&family=Oi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="./Pict/Logo/NewPdP-2024.webp" target="_blank">
+                    <img src="./Pict/Logo/NewPdP-2024.webp" alt="Logo de Brickin Pictures">
+                </a>
+                <a href="#">Brickin Pictures</a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="photos.html">Photos</a>
+                <a href="contact.html">Contact</a>
+                <a href="apropos.html">À propos</a>
+            </nav>
+        </div>
+    </div>  
+    
+    <!-- Contenu principal -->
+    <h1>Contactez-moi !</h1>
+    <p>Veuillez me contacter en remplissant le formulaire ci-joint !</p>
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="75160c47-83c2-4c59-b37c-f86f485d39d2">
+        <div class="separation"></div>
+        <div class="corps-form">
+            <div class="gauche">
+                <div class="boite">
+                    <label for="email">Votre e-mail :</label>
+                    <input type="email" name="email" id="choix" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="boite">
+                    <label for="typeContact">Type de contact :</label>
+                    <select id="typeContact" name="typeContact" required>
+                        <option value="photos_sur_mesure">Photos sur mesure</option>
+                        <option value="couvertures_evenements">Couverture d'événements</option>
+                        <option value="montage_retouche">Montage et retouche photo</option>
+                    </select>
+                </div>
+                <div class="boite">
+                    <label for="offre">Offre :</label>
+                    <select id="offre" name="offre">
+                        <option value="">Aucune</option>
+                        <option value="forfait_1h">Forfait 1h - Séance personnalisable</option>
+                        <option value="forfait_evenement">Forfait événement - 2h minimum</option>
+                        <option value="packs_photos">Packs photos</option>
+                    </select>
+                </div>
+            </div>
+            <div class="droite">
+                <div class="groupe">
+                    <label>Message :</label>
+                    <textarea name="message" placeholder="Saisissez le contenu du mail ici..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="pied-form" align="center">
+            <button type="submit">Envoyer le message</button>
+        </div>
+        <input type="hidden" name="redirect" value="http://82.66.12.106:8416/thankyou.html">
+    </form>
+</body>
+</html>

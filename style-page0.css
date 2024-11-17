@@ -1,0 +1,162 @@
+/* Réinitialisation du style */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: -10;
+    width: 110%;
+    height: 110%;
+    background: url('./Pict/FondPage0-paysage.jpg') no-repeat center center/cover;
+    filter: blur(10px); /* Effet de flou */
+    z-index: -1; /* Place l'image derrière les boutons */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%; /* Ajuste l'espacement des boutons */
+}
+
+.btn {
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.7; /* Fond semi-transparent */
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.5); /* Agrandit légèrement au survol */
+    opacity: 0.9;
+}
+
+.btn-photo {
+    margin-bottom: auto; /* Positionne vers le haut */
+    background: rgb(219, 155, 214);
+    color: black;
+}
+
+.btn-photo:hover{
+    background: rgb(77, 45, 74);
+    color: white;
+}
+
+/* Conteneur des icônes */
+.icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Les icônes ne sont pas cliquables */
+}
+
+/* Icônes individuelles */
+.icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0; /* Les icônes sont invisibles par défaut */
+    transform: scale(0) translate(0, 0) rotate(0deg); /* Taille réduite et à l'intérieur du bouton */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition fluide */
+}
+
+/* Icônes autour du bouton */
+.icon:nth-child(1) {
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.icon:nth-child(2) {
+    top: 50%;
+    left: -40px;
+    transform: translate(0, -50%);
+}
+
+.icon:nth-child(3) {
+    top: 50%;
+    left: 140%;
+    transform: translate(0, -50%);
+}
+
+.icon:nth-child(4) {
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* Animation d'apparition lors du hover */
+.btn-photo:hover .icon:nth-child(1) {
+    opacity: 1;
+    transform: translate(-25%, -30px) scale(2.5) rotate(350deg); /* Sort au-dessus */
+}
+
+.btn-photo:hover .icon:nth-child(2) {
+    opacity: 1;
+    transform: translate(-40px, -25%) scale(2.5) rotate(375deg); /* Sort à gauche */
+}
+
+.btn-photo:hover .icon:nth-child(3) {
+    opacity: 1;
+    transform: translate(-20px, -25%) scale(2.5) rotate(450deg); /* Sort à droite */
+}
+
+.btn-photo:hover .icon:nth-child(4) {
+    opacity: 1;
+    transform: translate(-25%, 40px) scale(2.5) rotate(600deg); /* Sort en dessous */
+}
+
+.btn-clackman {
+    margin-top: auto; /* Positionne vers le bas */
+    background: rgb(207, 125, 125);
+    color: black;
+}
+
+.btn-clackman:hover {
+    background: rgb(66, 30, 30);
+    color: white;
+}
+
+/* Adaptation pour les écrans plus petits */
+@media (max-width: 768px) {
+    .btn-photo:hover .icon:nth-child(1) {
+        transform: translate(-10%, -10px) scale(3) rotate(355deg); /* Réduction de la sortie vers le haut */
+    }
+
+    .btn-photo:hover .icon:nth-child(2) {
+        transform: translate(-10px, -50%) scale(3) rotate(400deg); /* Réduction de la sortie vers la gauche */
+    }
+
+    .btn-photo:hover .icon:nth-child(3) {
+        transform: translate(-25px, -5%) scale(3) rotate(375deg); /* Réduction de la sortie vers la droite */
+    }
+
+    .btn-photo:hover .icon:nth-child(4) {
+        transform: translate(-10%, 10px) scale(1.2) rotate(360deg); /* Réduction de la sortie vers le bas */
+    }
+
+    .icon {
+        width: 15px; /* Icônes légèrement plus petites */
+        height: 15px;
+    }
+}

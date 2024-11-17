@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brickin Pictures - Photos</title>
+    <link rel="icon" href="./Pict/Logo/appareil-photo-reflex-numerique.png" type="image/png">
+    <link rel="stylesheet" href="style-photos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barriecito&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barriecito&family=Oi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="./Pict/Logo/NewPdP-2024.webp" target="_blank">
+                    <img src="./Pict/Logo/NewPdP-2024.webp" alt="Logo de Brickin Pictures">
+                </a>
+                <a class="name-logo" href="#">Brickin Pictures</a>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="h-nav-home" data-icon-class="fa-solid fa-house"><i
+                        class="fa-solid fa-house" style="color: #74C0FC;" aria-hidden="true"></i> Accueil</a>
+                <a href="photos.html" data-i18n="h-nav-photo" data-icon-class="fa fa-camera"><i class="fa fa-camera"
+                        aria-hidden="true" style="color: #74C0FC;"></i> Photos</a>
+                <a href="contact.html" data-i18n="h-nav-contact" data-icon-class="fa fa-envelope"><i
+                        class="fa fa-envelope" aria-hidden="true" style="color: #74C0FC;"></i> Contact</a>
+                <a href="apropos.html" data-i18n="h-nav-apropos" data-icon-class="fa fa-circle-info"><i
+                        class="fa fa-circle-info" aria-hidden="true" style="color: #74C0FC;"></i> À propos</a>
+                
+                <div class="language-selector">
+                    <label for="language" data-i18n="h-language">🌐 Langue :</label>
+                    <select id="language" class="select-with-flag">
+                        <option value="en" data-image="https://flagcdn.com/w320/gb.png" data-flag="gb">English</option>
+                        <option value="fr" data-image="https://flagcdn.com/w320/fr.png" selected>Français</option>
+                        <option value="es" data-image="https://flagcdn.com/w320/es.png">Español</option>
+                    </select>
+                </div>
+                
+                <!--<div class="language-menu">
+                    <label id="language-toggle" class="language-toggle" for="language" data-i18n="h-language">🌐 Langue :</label>
+                    <ul id="language-options" class="language-options">
+                        <li><a href="#" data-lang="fr">Français</a></li>
+                        <li><a href="#" data-lang="en">English</a></li>
+                        <li><a href="#" data-lang="es">Español</a></li>
+                    </ul>
+                </div>-->
+            </nav>
+
+            <!-- Menu Hamburger -->
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="titles" data-key="title">
+        <h1>Voici une sélection de mes meilleures photos, inspirées du style Instagram !</h1>
+    </div>
+
+
+    <!-- Galerie de photos -->
+    <div class="gallery">
+        <div class="image-container">
+            <div class="overlay-text" data-key="overlay-text-MajosMDD">Les Majos de Montdidier</div>
+            <img src="./Pict/MajosMDD/IMG_0192-2.webp" alt="Photo Majos MDD Halloween 1" data-theme="theme1"
+                data-description="Les Majos de Montdidier lors du Festival des Phoenix de Gamaches"
+                data-link="https://www.instagram.com/lesmajorettesdemontdidier/">
+            <img src="./Pict/MajosMDD/IMG_0110.webp" alt="Photo Majos MDD Halloween 2" data-theme="theme1"
+                class="hidden" data-description="Les Majos de Montdidier au Festival des Phoenix de Gamaches"
+                data-link="https://www.instagram.com/lesmajorettesdemontdidier/">
+            <img src="./Pict/MajosMDD/IMG_9375.webp" alt="Photo Majos MDD Halloween 3" data-theme="theme1"
+                class="hidden" data-description="Les Majos de Montdidier en parade à Gamaches"
+                data-link="https://www.instagram.com/lesmajorettesdemontdidier/">
+        </div>
+        <div class="image-container">
+            <div class="overlay-text">Paysages</div>
+            <img src="./Pict/Paysages/IMG_0482.webp" alt="Photo Paysage 1" data-theme="theme2"
+                data-description="Phare du Tréport">
+        </div>
+        <div class="image-container">
+            <div class="overlay-text">Événements à Montdidier</div>
+            <img src="./Pict/EventMDD/IMG_0625.webp" alt="Photo 80 Ans Libération Montdidier 1" data-theme="theme3"
+                data-description="Célébration des 80 ans de la Libération de Montdidier">
+            <img src="./Pict/EventMDD/IMG_0859.webp" alt="Photo 80 Ans Libération Montdidier 2" data-theme="theme3"
+                class="hidden" data-description="Célébration des 80 ans de la Libération de Montdidier 2">
+        </div>
+        <div class="image-container">
+            <div class="overlay-text">Portraits</div>
+            <img src="./Pict/PhotosPersonnalites/IMG_1886.webp" alt="Photo Emma Rgz" data-theme="theme4"
+                data-description="Portrait d'Emma Rgz" data-link="https://www.instagram.com/emma.rgz13/">
+            <img src="./Pict/PhotosPersonnalites/IMG_1876.webp" alt="Photo Emma Rgz" data-theme="theme4" class="hidden"
+                data-description="Portrait d'Emma Rgz 2" data-link="https://www.instagram.com/emma.rgz13/">
+            <img src="./Pict/PhotosPersonnalites/IMG_1860.webp" alt="Photo Emma Rgz" data-theme="theme4" class="hidden"
+                data-description="Portrait d'Emma Rgz 3" data-link="https://www.instagram.com/emma.rgz13/">
+            <img src="./Pict/PhotosPersonnalites/IMG_1845.webp" alt="Photo Emma Rgz" data-theme="theme4" class="hidden"
+                data-description="Portrait d'Emma Rgz 4" data-link="https://www.instagram.com/emma.rgz13/">
+        </div>
+        <div class="image-container">
+            <div class="overlay-text">BasketBall Montdidier</div>
+            <img src="./Pict/BasketBallMDD/IMG_8091-1.webp" alt="Photo BasketBall Montdidier 1" data-theme="theme6"
+                data-description="Match de basket à Montdidier" data-link="https://www.instagram.com/basketmontdidier/">
+            <img src="./Pict/BasketBallMDD/IMG_7914_1.jpg" alt="Photo BasketBall Montdidier 2" data-theme="theme6"
+                data-description="Match BBM vs US Boves Basket-Ball" class="hidden"
+                data-link="https://www.instagram.com/basketmontdidier/">
+            <img src="./Pict/BasketBallMDD/IMG_8421.jpg" alt="Photo BasketBall Montdidier 3" data-theme="theme6"
+                data-description="Match BBM vs B.B. La Croix" class="hidden"
+                data-link="https://www.instagram.com/basketmontdidier/">
+
+        </div>
+        <div class="image-container">
+            <div class="overlay-text">Autres évènements</div>
+            <img src="./Pict/AutresEvent/IMG_5719.webp" alt="Photo Color'Run - Roye - 2024 - 1" data-theme="theme5"
+                data-description="Photo de la Color'Run à Roye 2024">
+        </div>
+
+        <!-- Ajoute ici d'autres images pour ta galerie -->
+    </div>
+
+    <!-- Lightbox pour afficher les images en grand -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="Image en grand">
+            <div class="description" id="lightbox-description"></div>
+            <a id="lightbox-link" href="" target="_blank">Voir sur Instagram</a>
+        </div>
+
+        <div class="navigation">
+            <button onclick="prevImage()">&#10094;</button>
+            <button onclick="nextImage()">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        let currentTheme = "";
+
+        const images = document.querySelectorAll('.gallery img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxDescription = document.getElementById('lightbox-description');
+        const lightboxLink = document.getElementById('lightbox-link');
+        const navigation = document.querySelector('.navigation');
+
+        let isMouseNearBottom = false;
+
+        // Fonction pour afficher la lightbox avec l'image cliquée
+        images.forEach((img) => {
+            img.addEventListener('click', () => {
+                currentTheme = img.getAttribute('data-theme');
+                currentImageIndex = getThemeImages().indexOf(img); // Obtenir l'index de l'image cliquée dans le thème
+                showImage();
+            });
+        });
+
+        function getThemeImages() {
+            // Retourne toutes les images correspondant au thème actuel
+            return Array.from(images).filter(img => img.getAttribute('data-theme') === currentTheme);
+        }
+
+        function showImage() {
+            // Filtrer les images en fonction du thème actuel
+            const themeImages = getThemeImages();
+            const currentImage = themeImages[currentImageIndex];
+
+            // Afficher l'image dans la lightbox
+            lightboxImg.src = currentImage.src;
+            lightboxDescription.textContent = currentImage.getAttribute('data-description'); // Ajouter la description
+
+            // Toujours afficher la lightbox
+            lightbox.style.display = "flex";
+
+            // Mise à jour dynamique (basée sur la position de la souris)
+            updateNavigationAndLink();
+        }
+
+        // Fermer la lightbox
+        function closeLightbox() {
+            lightbox.style.display = "none";
+            document.body.classList.remove('shrink-lightbox');
+        }
+
+        function nextImage() {
+            const themeImages = getThemeImages();
+            currentImageIndex = (currentImageIndex + 1) % themeImages.length; // Boucle entre les images
+            showImage();
+        }
+
+        function prevImage() {
+            const themeImages = getThemeImages();
+            currentImageIndex = (currentImageIndex - 1 + themeImages.length) % themeImages.length; // Boucle entre les images
+            showImage();
+        }
+
+        // Détecte si la souris est proche du bas de l'écran
+        document.addEventListener('mousemove', (event) => {
+            const distanceFromBottom = window.innerHeight - event.clientY;
+            isMouseNearBottom = distanceFromBottom < 300; // 300px du bas de l'écran
+
+            // Mettre à jour l'affichage dynamique des éléments
+            updateNavigationAndLink();
+        });
+
+        // Met à jour l'état de la navigation et du lien
+        function updateNavigationAndLink() {
+            const themeImages = getThemeImages();
+            if (themeImages.length === 0) return;
+
+            const currentImage = themeImages[currentImageIndex];
+            const link = currentImage.getAttribute('data-link');
+
+            // Si la souris est proche du bas
+            if (isMouseNearBottom) {
+                navigation.style.display = 'flex'; // Affiche la navigation
+                if (link && link.trim() !== "") {
+                    lightboxLink.style.display = 'block'; // Affiche le lien Instagram si valide
+                } else {
+                    lightboxLink.style.display = 'none'; // Cache le lien si non valide
+                }
+                document.body.classList.add('shrink-lightbox'); // Réduit l'image
+            } else {
+                navigation.style.display = 'none'; // Cache la navigation
+                lightboxLink.style.display = 'none'; // Cache le lien Instagram
+                document.body.classList.remove('shrink-lightbox'); // Réinitialise la taille de l'image
+            }
+        }
+
+        // Fermer la lightbox en cliquant en dehors de l'image
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+                menuToggle.classList.toggle("open");
+            });
+
+            // Fonction qui vérifie la taille de l'écran et modifie le texte de l'élément
+            function updateLinkText() {
+                const menuLink = document.querySelector('.name-logo');
+                
+                if (window.matchMedia("(max-width: 1580px)").matches) {
+                    // Si la condition est respectée (écran < 655px), on remplace le texte
+                    menuLink.textContent = "BCP";
+                } else {
+                    // Sinon, on remet le texte d'origine
+                    menuLink.textContent = "Brickin Pictures";
+                }
+            }
+
+            // Appel de la fonction lors du chargement initial de la page
+            updateLinkText();
+
+            // Appel de la fonction lors du redimensionnement de la fenêtre
+            window.addEventListener('resize', updateLinkText);
+        });
+
+        $(document).ready(function () {
+            /// Initialiser Select2 pour le menu déroulant
+            $('#language').select2({
+                templateResult: formatFlag, // Utilise la fonction pour afficher les options
+                templateSelection: formatFlag, // Utilise la fonction pour la sélection
+                minimumResultsForSearch: -1, // Désactive la barre de recherche
+                width: 'resolve', // Ajuste la largeur automatiquement
+            });
+
+            // Format d'affichage des options avec les drapeaux
+            function formatFlag(option) {
+                // Si l'option n'a pas d'ID, retourner simplement le texte
+                if (!option.id) {
+                    return option.text;
+                }
+
+                // Récupérer l'URL de l'image depuis l'attribut `data-image`
+                const flag = $(option.element).data('image');
+                const isGB = $(option.element).data('flag') === 'gb'; // Vérifie si c'est le drapeau GB
+
+                // Générer le HTML avec le drapeau et le texte
+                return $(
+                    `<span>
+                        <img src="${flag}" style="width: ${isGB ? '24px' : '20px'}; height: auto; margin-right: 10px;" alt="flag" />
+                        ${option.text}
+                    </span>`
+                );
+            }
+
+            // Charger les traductions depuis lang.json
+            let translations = {};
+            fetch('lang-photo.json')  // Assurez-vous que le chemin du fichier JSON est correct
+            .then(response => response.json())
+            .then(data => {
+                translations = data;
+                // Appliquer la langue par défaut après le chargement du fichier JSON
+                const defaultLang = 'fr'; // Langue par défaut : français
+                document.getElementById('language').value = defaultLang;
+                changeLanguage(document.getElementById('language')); // Appliquer les traductions initiales
+            });
+
+            function changeLanguage(select) {
+                const selectedLang = select.value;
+
+                document.querySelectorAll('[data-i18n]').forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    if (translations[selectedLang] && translations[selectedLang][key]) {
+                        // Chercher les noeuds texte uniquement
+                        element.childNodes.forEach(node => {
+                            if (node.nodeType === Node.TEXT_NODE) {
+                                node.textContent = translations[selectedLang][key];
+                            }
+                        });
+                    }
+                });
+
+                document.documentElement.lang = selectedLang;
+            }
+
+            // Appliquer l'événement change à votre sélecteur de langue
+            $('#language').on('change', function () {
+                changeLanguage(this);
+            });
+        });
+
+
+        /**/
+    </script>
+
+</body>
+
+</html>

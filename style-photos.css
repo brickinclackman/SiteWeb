@@ -1,0 +1,612 @@
+/* Style général du site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Atma", system-ui;
+    text-decoration: none;
+    list-style: none;
+}
+
+.titles {
+    display: block;
+    margin-top: 180px;
+}
+
+
+
+.navbar .container .nav-links a .fa {
+    font-size: 25px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.navbar .container .nav-links a .fa-solid {
+    font-size: 25px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    /* Couleur de fond du menu (vous pouvez la personnaliser) */
+    z-index: 1000;
+    /* Assure que le menu reste au-dessus du contenu */
+    padding: 1% 0;
+    /* Ajuste la hauteur du menu */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Optionnel: Ajoute une ombre sous le menu */
+}
+
+.navbar .container {
+    padding: 1rem 6%;
+    display: flex !important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #000000;
+}
+
+.navbar .logo {
+    height: 15%;
+    display: flex;              /* Active flexbox */
+    align-items: center;        /* Centre verticalement le texte et l'image */
+    gap: 10px;                  /* Ajoute un espace entre l'image et le texte */
+}
+
+.navbar .logo img {
+    height: 40px; /* Ajustez cette valeur selon la taille souhaitée */
+    width: auto; /* Maintient le ratio de l'image */
+    border-radius: 10px;
+    vertical-align: middle;     /* Aligne verticalement l'image par rapport au texte */
+}
+
+.navbar .logo a {
+    font-family: "Oi", serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar nav a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ccc;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+
+.navbar .nav-links a:hover {
+    color: #fff;
+    background-color: #525050;
+    border-radius: 15px;
+}
+
+.language-selector{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.language-selector label {
+    font-size: 16px;
+    color: #fff; /* Texte de couleur blanche */
+    font-weight: bold;
+}
+
+/* Hide native dropdown */
+.select-with-flag {
+    appearance: none; /* Supprime le style par défaut du navigateur */
+    border: 5px solid #1d4888;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #838383;
+    background-image: url("https://flagcdn.com/w320/gb.png"); /* Placeholder pour le drapeau */
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    background-size: 20px;
+    cursor: pointer;
+    width: 180px; /* Ajustez la largeur au besoin */
+}
+
+.select-with-flag:hover {
+    border-color: #666;
+}
+
+.select-with-flag option {
+    padding: 10px;
+    background-color: #832c2c;
+    color: #333;
+}
+
+.select-with-flag option:hover {
+    background-color: #8b6363;
+}
+
+/* Si vous voulez cacher la flèche par défaut */
+.select-with-flag::-ms-expand {
+    display: none;
+}
+
+/* Add custom arrow */
+.select-with-flag::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+}
+
+/* Change flag dynamically */
+.select-with-flag option {
+    background-color: #c97979;
+    padding: 10px;
+}
+
+.select-with-flag img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Desktop navigation */
+.nav-links {
+    display: flex; /* Met en ligne les éléments */
+    align-items: center; /* Centre verticalement les items */
+    height: auto; /* Ajuste la hauteur automatiquement selon le contenu */
+    padding: 0; /* Supprime les éventuels espaces internes */
+    margin: 0; /* Supprime les marges autour */
+    background-color: transparent; /* Assurez-vous qu'il n'y a pas de couleur indésirable */
+}
+
+.nav-links a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ccc;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem; /* Ajoute un padding autour du lien */
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.nav-links a .fa-solid {
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+/* Menu hamburger */
+.menu-toggle {
+    display: none !important;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: auto;
+    z-index: 1001; /* S'assurer qu'il est au-dessus du menu */
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+/* Titres */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Style pour la galerie de photos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* arrondi les coins des images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* ajoute une ombre douce */
+    transition: transform 0.2s;
+    /* animation de zoom */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    /* effet de zoom léger au survol */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Texte qui s'affiche lors du survol */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 20px;
+    background-color: black;
+    /* Couche totalement opaque */
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Ajout d'une transition douce pour l'apparition et la position */
+    pointer-events: none;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    /* Légère ombre pour lisibilité */
+}
+
+/* Affichage du texte lors du survol */
+.image-container:hover .overlay-text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+    z-index: 1000;
+}
+
+/* Assombrit davantage l'image lors du survol */
+.image-container:hover img {
+    filter: brightness(0.5);
+    /* Atténue encore plus la luminosité pour renforcer le contraste */
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Le conteneur de contenu pour l'image, la description et les flèches */
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    /* Réduit la largeur max du contenu */
+    max-height: 80%;
+    /* Limite la hauteur max du contenu */
+    overflow: hidden;
+    /* Masque l'excédent */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 1000px;    /* Ajustez en fonction de la taille de votre image */
+}
+
+/* Lightbox */
+.lightbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centre tout horizontalement */
+    justify-content: center;
+    /* Centre tout verticalement */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fond sombre */
+    display: none;
+    /* Cachée par défaut */
+    z-index: 1000;
+}
+
+/* Le conteneur de contenu pour l'image, la description et les flèches */
+.lightbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    /* Réduit la largeur max du contenu */
+    max-height: 80%;
+    /* Limite la hauteur max du contenu */
+    overflow: hidden;
+    /* Masque l'excédent */
+}
+
+
+/* Image */
+#lightbox-img {
+    max-width: 100%;
+    /* 100% de la largeur du conteneur */
+    max-height: 75vh;
+    /* 70% de la hauteur de la fenêtre de visualisation */
+    margin-bottom: 10px;
+    /* Espace entre l'image et la description */
+    border-radius: 3%;
+}
+
+/* Description sous l'image */
+#lightbox-description {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* Réduit l'espace entre la description et les flèches */
+}
+
+#lightbox-link {
+    display: none;    /* Affiché uniquement si un lien est présent */
+    background-color: #ff4d4d;    /* Couleur de fond rouge pour un contraste */
+    color: white;    /* Texte en blanc */
+    padding: 10px 20px;    /* Espace intérieur pour le rendre plus grand */
+    text-decoration: none;    /* Retirer le soulignement */
+    font-size: 18px;    /* Taille de police confortable */
+    font-weight: bold;    /* Police en gras */
+    border-radius: 5px;    /* Bordures arrondies */
+    text-align: center;    /* Centrer le texte */
+    margin-top: 15px;    /* Espacement par rapport à l'image */
+    transition: all 0.3s ease;    /* Transition fluide pour les effets */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    /* Ombre portée subtile */
+    margin-bottom: 50px; /* Assure un peu d'espace sous le lien */
+}
+
+/* Effet de survol */
+#lightbox-link:hover {
+    background-color: #ff3333;
+    /* Changer la couleur de fond au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Ombre plus marquée au survol */
+    transform: translateY(-3px);
+    /* Léger déplacement pour un effet de profondeur */
+}
+
+/* Effet actif lorsque l'on clique sur le lien */
+#lightbox-link:active {
+    transform: translateY(1px);
+    /* Resserre légèrement le bouton lorsqu'on clique */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Ombre moins marquée au clic */
+}
+
+.lightbox-content img {
+    transform: scale(1); /* Taille normale */
+    opacity: 1; /* Complètement visible */
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out; /* Transition fluide */
+}
+
+/* Si la souris est proche du bas, ajoute un espacement supplémentaire */
+body.shrink-lightbox #lightbox-img {
+    max-height: 70vh; /* Réduit la taille de l'image pour faire de la place pour les boutons et le lien */
+    opacity: 0.8; /* Légère transparence */
+}
+
+/* Flèches de navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px; /* Réduit l'espace entre la description et les flèches */
+}
+
+.navigation button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.navigation button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Bouton de fermeture */
+.close {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+/* @media pour les écrans mobiles */
+@media (max-width: 1140px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Menu caché par défaut */
+    .nav-links {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 200px;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    /* Menu visible lorsque la classe active est ajoutée */
+    .nav-links.active {
+        display: flex !important;
+        flex-direction: column; /* Organise les éléments verticalement */
+        align-items: center;
+        right: 0;
+        opacity: 1;
+        z-index: 1002;
+        /* Place au-dessus de tout */
+        position: fixed; /* Fixe pour apparaître au-dessus */
+        padding: 10px 20px; /* Ajuste l'espacement intérieur */
+        width: auto; /* La largeur s'ajuste au contenu */
+        height: auto; /* La hauteur s'ajuste au contenu */
+        transform: translateY(0);
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Fond sombre */
+        border-radius: 8px;
+        /* Coins arrondis */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        /* Effet d'ombre */
+        max-width: 90%; /* Limite la largeur pour éviter de déborder */
+        max-height: 90vh; /* Limite la hauteur pour éviter de déborder */
+        transition: all 1s ease; /* Animation fluide pour l'adaptation */
+    }
+
+    /* Style pour les liens du menu */
+    .nav-links a {
+        font-size: 20px;
+        font-weight: 400;
+        color: #ddd;
+        text-transform: capitalize;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+        display: block !important;
+        /* Important pour aligner */
+        text-align: center;
+    }
+
+    /* Changer la couleur des liens au survol */
+    .nav-links a:hover {
+        background-color: #555;
+        color: #fff;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 6px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001; /* Assure qu'il est au-dessus du contenu */
+        position: relative; /* Permet un positionnement précis */
+        width: 50px; /* Largeur attendue */
+        height: 50px; /* Hauteur attendue */
+    }
+
+    .menu-toggle:hover{
+        border-radius: 10px;
+    }
+
+    .menu-toggle span {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        display: block !important;
+    }
+
+    .menu-toggle .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+    }
+    
+    .menu-toggle.open .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle.open .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}

@@ -1,0 +1,240 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    /* Pour empiler les éléments verticalement */
+    justify-content: center;
+    /* Centrer verticalement */
+    align-items: center;
+    /* Centrer horizontalement */
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Pict/IMG_0454.jpg);
+    background-size: cover;
+    /* Ajuste l'image à la taille du viewport */
+    background-attachment: fixed;
+    /* L'image reste fixe lors du défilement */
+    background-position: center center;
+    /* Centre l'image */
+    filter: blur(5px);
+    /* Applique un flou de 5px */
+    z-index: -1;
+    /* Assure que l'image est derrière le contenu */
+}
+
+/* Navigation */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Atma", system-ui;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Navigation */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    padding: 1rem 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #000000;
+}
+
+.navbar .logo {
+    height: 35px;
+    overflow: hidden;
+}
+
+.navbar .logo img {
+    height: 35px;
+    /* Ajustez cette valeur selon la taille souhaitée */
+    width: auto;
+    /* Maintient le ratio de l'image */
+}
+
+.navbar .logo a {
+    font-family: "Oi", serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar nav a {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.navbar nav a:hover {
+    color: #fff;
+}
+
+/**---NAVIGATION---**/
+
+form {
+    background-color: rgb(182, 179, 184);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form h1 {
+    font-size: 20px;
+}
+
+form .separation {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(204, 151, 151);
+}
+
+form .corps-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-form .boite {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corps-form .gauche .boite #choix {
+    margin: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #e9a5dd;
+    border-radius: 5px;
+}
+
+form .corps-form .gauche .boite #typeContact {
+    margin: 5px;
+    border: 1px solid #c9c9c9;
+    outline-color: #e9a5dd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .corps-form .gauche .boite #offre {
+    margin: 5px;
+    border: 1px solid #c9c9c9;
+    outline-color: #e9a5dd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .corps-form .gauche .boite i {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    padding: 18px 15px;
+    color: #e9a5dd;
+}
+
+form .corps-form .droite {
+    margin-left: 40px;
+}
+
+form .corps-form .droite .groupe {
+    height: 100%;
+    /* Pour laisser le contenu s'adapter */
+    margin-top: 10px;
+    /* Ajouter un peu d'espace entre les groupes */
+}
+
+form .corps-form .droite .groupe textarea {
+    width: 100%;
+    /* Assurez-vous que le textarea occupe toute la largeur disponible */
+    height: 72%;
+    /* Définissez une hauteur appropriée pour votre textarea */
+    margin-top: 5px;
+    /* Ajoutez de l'espace entre les éléments */
+    padding: 10px;
+    resize: none;
+    border: 1px solid #c9c9c9;
+    outline-color: #e9a5dd;
+    border-radius: 5px;
+}
+
+form .pied-form button {
+    margin-top: 10px;
+    background-color: #e9a5dd;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+form .pied-form button:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:1255px) {
+    form .corps-form .droite {
+        margin-left: 0px;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .form-group input {
+        width: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}
